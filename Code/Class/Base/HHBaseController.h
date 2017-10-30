@@ -22,4 +22,19 @@ typedef NS_ENUM(NSInteger, NibType) {
 //如果是xib用这个初始化 如果不是，直接init
 - (instancetype)initWithNibVCName:(NSString *)vcName;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

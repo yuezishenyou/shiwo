@@ -13,6 +13,13 @@
 		2DC221821FA6F0DF000184DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC221811FA6F0DF000184DD /* Assets.xcassets */; };
 		2DC221851FA6F0DF000184DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC221831FA6F0DF000184DD /* LaunchScreen.storyboard */; };
 		2DC221881FA6F0DF000184DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221871FA6F0DF000184DD /* main.m */; };
+		2DC221A51FA6F25B000184DD /* AppDelegate+Pay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221911FA6F25B000184DD /* AppDelegate+Pay.m */; };
+		2DC221A61FA6F25B000184DD /* HHBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221951FA6F25B000184DD /* HHBaseController.m */; };
+		2DC221A71FA6F25B000184DD /* HHMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221991FA6F25B000184DD /* HHMainController.m */; };
+		2DC221A81FA6F25B000184DD /* HHMainController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2219A1FA6F25B000184DD /* HHMainController_iPad.xib */; };
+		2DC221A91FA6F25B000184DD /* HHMainController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2219B1FA6F25B000184DD /* HHMainController_iPhone.xib */; };
+		2DC221AA1FA6F25B000184DD /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221A01FA6F25B000184DD /* Global.m */; };
+		2DC221AB1FA6F25B000184DD /* HHNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221A41FA6F25B000184DD /* HHNetwork.m */; };
 		6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +35,21 @@
 		2DC221841FA6F0DF000184DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DC221861FA6F0DF000184DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DC221871FA6F0DF000184DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DC221901FA6F25B000184DD /* AppDelegate+Pay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Pay.h"; sourceTree = "<group>"; };
+		2DC221911FA6F25B000184DD /* AppDelegate+Pay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Pay.m"; sourceTree = "<group>"; };
+		2DC221941FA6F25B000184DD /* HHBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseController.h; sourceTree = "<group>"; };
+		2DC221951FA6F25B000184DD /* HHBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseController.m; sourceTree = "<group>"; };
+		2DC221981FA6F25B000184DD /* HHMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMainController.h; sourceTree = "<group>"; };
+		2DC221991FA6F25B000184DD /* HHMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMainController.m; sourceTree = "<group>"; };
+		2DC2219A1FA6F25B000184DD /* HHMainController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHMainController_iPad.xib; sourceTree = "<group>"; };
+		2DC2219B1FA6F25B000184DD /* HHMainController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHMainController_iPhone.xib; sourceTree = "<group>"; };
+		2DC2219D1FA6F25B000184DD /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		2DC2219E1FA6F25B000184DD /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		2DC2219F1FA6F25B000184DD /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		2DC221A01FA6F25B000184DD /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
+		2DC221A31FA6F25B000184DD /* HHNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetwork.h; sourceTree = "<group>"; };
+		2DC221A41FA6F25B000184DD /* HHNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetwork.m; sourceTree = "<group>"; };
+		2DC221AC1FA6F412000184DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +69,7 @@
 		2DC2216C1FA6F0DF000184DD = {
 			isa = PBXGroup;
 			children = (
+				2DC2218E1FA6F25B000184DD /* Code */,
 				2DC221771FA6F0DF000184DD /* shiwo */,
 				2DC221761FA6F0DF000184DD /* Products */,
 				B7436131272DCFE471C2B7E4 /* Pods */,
@@ -74,8 +97,94 @@
 				2DC221831FA6F0DF000184DD /* LaunchScreen.storyboard */,
 				2DC221861FA6F0DF000184DD /* Info.plist */,
 				2DC221871FA6F0DF000184DD /* main.m */,
+				2DC221AC1FA6F412000184DD /* PrefixHeader.pch */,
 			);
 			path = shiwo;
+			sourceTree = "<group>";
+		};
+		2DC2218E1FA6F25B000184DD /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				2DC2218F1FA6F25B000184DD /* Category */,
+				2DC221921FA6F25B000184DD /* Class */,
+				2DC2219C1FA6F25B000184DD /* Common */,
+				2DC221A11FA6F25B000184DD /* Util */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		2DC2218F1FA6F25B000184DD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221901FA6F25B000184DD /* AppDelegate+Pay.h */,
+				2DC221911FA6F25B000184DD /* AppDelegate+Pay.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2DC221921FA6F25B000184DD /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221931FA6F25B000184DD /* Base */,
+				2DC221961FA6F25B000184DD /* Main */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		2DC221931FA6F25B000184DD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221941FA6F25B000184DD /* HHBaseController.h */,
+				2DC221951FA6F25B000184DD /* HHBaseController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2DC221961FA6F25B000184DD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221971FA6F25B000184DD /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2DC221971FA6F25B000184DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221981FA6F25B000184DD /* HHMainController.h */,
+				2DC221991FA6F25B000184DD /* HHMainController.m */,
+				2DC2219A1FA6F25B000184DD /* HHMainController_iPad.xib */,
+				2DC2219B1FA6F25B000184DD /* HHMainController_iPhone.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DC2219C1FA6F25B000184DD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2DC2219D1FA6F25B000184DD /* Common.h */,
+				2DC2219E1FA6F25B000184DD /* Const.h */,
+				2DC2219F1FA6F25B000184DD /* Global.h */,
+				2DC221A01FA6F25B000184DD /* Global.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2DC221A11FA6F25B000184DD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221A21FA6F25B000184DD /* HHNetwork */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2DC221A21FA6F25B000184DD /* HHNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221A31FA6F25B000184DD /* HHNetwork.h */,
+				2DC221A41FA6F25B000184DD /* HHNetwork.m */,
+			);
+			path = HHNetwork;
 			sourceTree = "<group>";
 		};
 		B7436131272DCFE471C2B7E4 /* Pods */ = {
@@ -156,9 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC221A81FA6F25B000184DD /* HHMainController_iPad.xib in Resources */,
 				2DC221851FA6F0DF000184DD /* LaunchScreen.storyboard in Resources */,
 				2DC221821FA6F0DF000184DD /* Assets.xcassets in Resources */,
 				2DC221801FA6F0DF000184DD /* Main.storyboard in Resources */,
+				2DC221A91FA6F25B000184DD /* HHMainController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,8 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC221AB1FA6F25B000184DD /* HHNetwork.m in Sources */,
 				2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */,
+				2DC221A61FA6F25B000184DD /* HHBaseController.m in Sources */,
+				2DC221A51FA6F25B000184DD /* AppDelegate+Pay.m in Sources */,
+				2DC221AA1FA6F25B000184DD /* Global.m in Sources */,
 				2DC221881FA6F0DF000184DD /* main.m in Sources */,
+				2DC221A71FA6F25B000184DD /* HHMainController.m in Sources */,
 				2DC2217A1FA6F0DF000184DD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,9 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U849E38UE8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/shiwo/PrefixHeader.pch";
 				INFOPLIST_FILE = shiwo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = maoziyue.shiwo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maoziyue.shiwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,9 +497,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U849E38UE8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/shiwo/PrefixHeader.pch";
 				INFOPLIST_FILE = shiwo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = maoziyue.shiwo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maoziyue.shiwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

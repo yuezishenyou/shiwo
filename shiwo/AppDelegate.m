@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HHMainController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,43 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self myCode];
+    
+    
     return YES;
 }
+
+- (void)myCode
+{
+    HHMainController *vc = [[HHMainController alloc]initWithNibVCName:@"HHMainController"];
+    
+    self.window.frame = [[UIScreen mainScreen]bounds];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UINavigationController *navc = [[UINavigationController alloc]initWithRootViewController:vc];
+    
+    self.window.rootViewController = navc;
+    
+    [self.window makeKeyAndVisible];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
