@@ -25,6 +25,8 @@
 		2DC221BD1FA70B5E000184DD /* YDRegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221BC1FA70B5E000184DD /* YDRegistController.m */; };
 		2DC221BF1FA70BE3000184DD /* YDRegistController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC221BE1FA70BE3000184DD /* YDRegistController_iPhone.xib */; };
 		2DC221C31FA70EBD000184DD /* HHServicePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221C21FA70EBD000184DD /* HHServicePickerView.m */; };
+		2DC221CF1FA72230000184DD /* HHContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221CE1FA72230000184DD /* HHContentView.m */; };
+		2DC221D11FA72240000184DD /* HHContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC221D01FA72240000184DD /* HHContentView.xib */; };
 		6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,9 @@
 		2DC221BE1FA70BE3000184DD /* YDRegistController_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YDRegistController_iPhone.xib; sourceTree = "<group>"; };
 		2DC221C11FA70EBD000184DD /* HHServicePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHServicePickerView.h; sourceTree = "<group>"; };
 		2DC221C21FA70EBD000184DD /* HHServicePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHServicePickerView.m; sourceTree = "<group>"; };
+		2DC221CD1FA72230000184DD /* HHContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHContentView.h; sourceTree = "<group>"; };
+		2DC221CE1FA72230000184DD /* HHContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHContentView.m; sourceTree = "<group>"; };
+		2DC221D01FA72240000184DD /* HHContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHContentView.xib; sourceTree = "<group>"; };
 		30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,6 +214,9 @@
 			children = (
 				2DC221B11FA70190000184DD /* HHSlideView.h */,
 				2DC221B21FA70190000184DD /* HHSlideView.m */,
+				2DC221CD1FA72230000184DD /* HHContentView.h */,
+				2DC221CE1FA72230000184DD /* HHContentView.m */,
+				2DC221D01FA72240000184DD /* HHContentView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC221D11FA72240000184DD /* HHContentView.xib in Resources */,
 				2DC221A81FA6F25B000184DD /* HHMainController_iPad.xib in Resources */,
 				2DC221851FA6F0DF000184DD /* LaunchScreen.storyboard in Resources */,
 				2DC221821FA6F0DF000184DD /* Assets.xcassets in Resources */,
@@ -387,6 +396,7 @@
 				2DC221AB1FA6F25B000184DD /* HHNetwork.m in Sources */,
 				2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */,
 				2DC221A61FA6F25B000184DD /* HHBaseController.m in Sources */,
+				2DC221CF1FA72230000184DD /* HHContentView.m in Sources */,
 				2DC221A51FA6F25B000184DD /* AppDelegate+Pay.m in Sources */,
 				2DC221BD1FA70B5E000184DD /* YDRegistController.m in Sources */,
 				2DC221AA1FA6F25B000184DD /* Global.m in Sources */,

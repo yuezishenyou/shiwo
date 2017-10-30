@@ -40,24 +40,27 @@
     
 }
 
+
+
+
 #pragma mark - 初始化侧栏按钮
 -(void)initSubView
 {
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"侧滑" style:UIBarButtonItemStyleDone target:self action:@selector(leftAction)];
     
-    self.openSlide = NO;
     
-    self.slideView = [[HHSlideView alloc]init];
+    
+    self.slideView = [[HHSlideView alloc]initWithSupView:self.navigationController.view];
     
     __weak typeof(self) weakSelf = self;
-    [self.slideView setBlock:^(NSInteger index) {
+    [self.slideView setBlock:^(NSString *str) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
+        
         HHLoginController *vc = [[HHLoginController alloc]init];
+        
         [strongSelf.navigationController pushViewController:vc animated:YES];
     }];
-    
-    [self.navigationController.view addSubview:self.slideView];
 
 }
 
@@ -74,18 +77,9 @@
 - (void)leftAction
 {
     //监视侧栏是否打开
-
-    if (self.openSlide == YES)
-    {
-        [self.slideView hidden];
-        self.openSlide = NO;
-    }
-    else
-    {
-        [self.slideView show];
-        self.openSlide = YES;
-    }
-
+    NSLog(@"--开--");
+    [self.slideView show];
+   
 }
 
 

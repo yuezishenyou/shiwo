@@ -8,13 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void ((^callBack)(NSInteger index));
+typedef void ((^callBack)(NSString *str));
 
 @interface HHSlideView : UIView
+
+- (instancetype)initWithSupView:(UIView *)supView;
 
 - (void)hidden;
 
 - (void)show;
+
+
+
+
+
+
+
+
 
 @property (nonatomic ,copy)callBack block;
 
