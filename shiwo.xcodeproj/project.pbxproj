@@ -20,6 +20,11 @@
 		2DC221A91FA6F25B000184DD /* HHMainController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2219B1FA6F25B000184DD /* HHMainController_iPhone.xib */; };
 		2DC221AA1FA6F25B000184DD /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221A01FA6F25B000184DD /* Global.m */; };
 		2DC221AB1FA6F25B000184DD /* HHNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221A41FA6F25B000184DD /* HHNetwork.m */; };
+		2DC221B31FA70190000184DD /* HHSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221B21FA70190000184DD /* HHSlideView.m */; };
+		2DC221BA1FA708E0000184DD /* HHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221B91FA708E0000184DD /* HHLoginController.m */; };
+		2DC221BD1FA70B5E000184DD /* YDRegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221BC1FA70B5E000184DD /* YDRegistController.m */; };
+		2DC221BF1FA70BE3000184DD /* YDRegistController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC221BE1FA70BE3000184DD /* YDRegistController_iPhone.xib */; };
+		2DC221C31FA70EBD000184DD /* HHServicePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221C21FA70EBD000184DD /* HHServicePickerView.m */; };
 		6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,15 @@
 		2DC221A31FA6F25B000184DD /* HHNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetwork.h; sourceTree = "<group>"; };
 		2DC221A41FA6F25B000184DD /* HHNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetwork.m; sourceTree = "<group>"; };
 		2DC221AC1FA6F412000184DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2DC221B11FA70190000184DD /* HHSlideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHSlideView.h; sourceTree = "<group>"; };
+		2DC221B21FA70190000184DD /* HHSlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHSlideView.m; sourceTree = "<group>"; };
+		2DC221B81FA708E0000184DD /* HHLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHLoginController.h; sourceTree = "<group>"; };
+		2DC221B91FA708E0000184DD /* HHLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHLoginController.m; sourceTree = "<group>"; };
+		2DC221BB1FA70B5E000184DD /* YDRegistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDRegistController.h; sourceTree = "<group>"; };
+		2DC221BC1FA70B5E000184DD /* YDRegistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDRegistController.m; sourceTree = "<group>"; };
+		2DC221BE1FA70BE3000184DD /* YDRegistController_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YDRegistController_iPhone.xib; sourceTree = "<group>"; };
+		2DC221C11FA70EBD000184DD /* HHServicePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHServicePickerView.h; sourceTree = "<group>"; };
+		2DC221C21FA70EBD000184DD /* HHServicePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHServicePickerView.m; sourceTree = "<group>"; };
 		30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +139,7 @@
 		2DC221921FA6F25B000184DD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				2DC221B71FA708D0000184DD /* Login */,
 				2DC221931FA6F25B000184DD /* Base */,
 				2DC221961FA6F25B000184DD /* Main */,
 			);
@@ -143,6 +158,7 @@
 		2DC221961FA6F25B000184DD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2DC221B01FA70182000184DD /* View */,
 				2DC221971FA6F25B000184DD /* Controller */,
 			);
 			path = Main;
@@ -173,6 +189,7 @@
 		2DC221A11FA6F25B000184DD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2DC221C01FA70E71000184DD /* HHPickerView */,
 				2DC221A21FA6F25B000184DD /* HHNetwork */,
 			);
 			path = Util;
@@ -185,6 +202,36 @@
 				2DC221A41FA6F25B000184DD /* HHNetwork.m */,
 			);
 			path = HHNetwork;
+			sourceTree = "<group>";
+		};
+		2DC221B01FA70182000184DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221B11FA70190000184DD /* HHSlideView.h */,
+				2DC221B21FA70190000184DD /* HHSlideView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DC221B71FA708D0000184DD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221B81FA708E0000184DD /* HHLoginController.h */,
+				2DC221B91FA708E0000184DD /* HHLoginController.m */,
+				2DC221BB1FA70B5E000184DD /* YDRegistController.h */,
+				2DC221BC1FA70B5E000184DD /* YDRegistController.m */,
+				2DC221BE1FA70BE3000184DD /* YDRegistController_iPhone.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2DC221C01FA70E71000184DD /* HHPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				2DC221C11FA70EBD000184DD /* HHServicePickerView.h */,
+				2DC221C21FA70EBD000184DD /* HHServicePickerView.m */,
+			);
+			path = HHPickerView;
 			sourceTree = "<group>";
 		};
 		B7436131272DCFE471C2B7E4 /* Pods */ = {
@@ -270,6 +317,7 @@
 				2DC221821FA6F0DF000184DD /* Assets.xcassets in Resources */,
 				2DC221801FA6F0DF000184DD /* Main.storyboard in Resources */,
 				2DC221A91FA6F25B000184DD /* HHMainController_iPhone.xib in Resources */,
+				2DC221BF1FA70BE3000184DD /* YDRegistController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,10 +388,14 @@
 				2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */,
 				2DC221A61FA6F25B000184DD /* HHBaseController.m in Sources */,
 				2DC221A51FA6F25B000184DD /* AppDelegate+Pay.m in Sources */,
+				2DC221BD1FA70B5E000184DD /* YDRegistController.m in Sources */,
 				2DC221AA1FA6F25B000184DD /* Global.m in Sources */,
+				2DC221C31FA70EBD000184DD /* HHServicePickerView.m in Sources */,
 				2DC221881FA6F0DF000184DD /* main.m in Sources */,
 				2DC221A71FA6F25B000184DD /* HHMainController.m in Sources */,
+				2DC221B31FA70190000184DD /* HHSlideView.m in Sources */,
 				2DC2217A1FA6F0DF000184DD /* AppDelegate.m in Sources */,
+				2DC221BA1FA708E0000184DD /* HHLoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
