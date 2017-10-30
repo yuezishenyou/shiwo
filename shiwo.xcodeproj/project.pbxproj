@@ -13,9 +13,11 @@
 		2DC221821FA6F0DF000184DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC221811FA6F0DF000184DD /* Assets.xcassets */; };
 		2DC221851FA6F0DF000184DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC221831FA6F0DF000184DD /* LaunchScreen.storyboard */; };
 		2DC221881FA6F0DF000184DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221871FA6F0DF000184DD /* main.m */; };
+		6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BD9D39E6539CA3552B4DF99 /* Pods-shiwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.debug.xcconfig"; sourceTree = "<group>"; };
 		2DC221751FA6F0DF000184DD /* shiwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shiwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC221781FA6F0DF000184DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DC221791FA6F0DF000184DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		2DC221841FA6F0DF000184DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DC221861FA6F0DF000184DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DC221871FA6F0DF000184DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				2DC221771FA6F0DF000184DD /* shiwo */,
 				2DC221761FA6F0DF000184DD /* Products */,
+				B7436131272DCFE471C2B7E4 /* Pods */,
+				D7E6D089BEE2C72E8BD3B5F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = shiwo;
 			sourceTree = "<group>";
 		};
+		B7436131272DCFE471C2B7E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BD9D39E6539CA3552B4DF99 /* Pods-shiwo.debug.xcconfig */,
+				68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7E6D089BEE2C72E8BD3B5F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DC2218B1FA6F0DF000184DD /* Build configuration list for PBXNativeTarget "shiwo" */;
 			buildPhases = (
+				8C2AD798D03B582FCF074776 /* [CP] Check Pods Manifest.lock */,
 				2DC221711FA6F0DF000184DD /* Sources */,
 				2DC221721FA6F0DF000184DD /* Frameworks */,
 				2DC221731FA6F0DF000184DD /* Resources */,
+				4D70C7195CEDD3CB7B4BAA45 /* [CP] Embed Pods Frameworks */,
+				A3A61787F8CA6382B0DEEAA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D70C7195CEDD3CB7B4BAA45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shiwo/Pods-shiwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C2AD798D03B582FCF074776 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shiwo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A61787F8CA6382B0DEEAA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-shiwo/Pods-shiwo-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shiwo/Pods-shiwo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DC221711FA6F0DF000184DD /* Sources */ = {
@@ -276,6 +359,7 @@
 		};
 		2DC2218C1FA6F0DF000184DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD9D39E6539CA3552B4DF99 /* Pods-shiwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +373,7 @@
 		};
 		2DC2218D1FA6F0DF000184DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
