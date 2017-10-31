@@ -9,6 +9,7 @@
 #import "HHMainController.h"
 #import "HHSlideView.h"
 #import "HHLoginController.h"
+#import "HHUserController.h"
 
 @interface HHMainController ()
 
@@ -29,14 +30,9 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    
     [self initSubView];
     
-    
-
-    
-    
- 
+    [self addBlock];
     
 }
 
@@ -53,7 +49,14 @@
     
     self.slideView = [[HHSlideView alloc]initWithSupView:self.navigationController.view];
     
+}
+
+- (void)addBlock
+{
+    
     __weak typeof(self) weakSelf = self;
+    
+    
     [self.slideView setBlock:^(NSString *str) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         
@@ -61,24 +64,27 @@
         
         [strongSelf.navigationController pushViewController:vc animated:YES];
     }];
-
+    
+    //
+    [self.slideView setSlideUserCtrolBlock:^(NSString *str) {
+        
+        HHUserController *vc = [[HHUserController alloc]init];
+        
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    
+    
+    
 }
 
-#pragma mark - 懒加载tableView
-- (HHSlideView *)slideView
-{
-    if (!_slideView) {
-        _slideView = [[HHSlideView alloc]init];
-    }
-    return _slideView;
-}
 
 
 - (void)leftAction
 {
     //监视侧栏是否打开
     NSLog(@"--开--");
-    [self.slideView show];
+    [self.slideView showAnimated:YES];
+    [self.slideView setHeaderImageWithFirstLoad:YES];
    
 }
 

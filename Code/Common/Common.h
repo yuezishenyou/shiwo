@@ -107,7 +107,7 @@
  */
 #define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
 
-#define headerPath  [NSString stringWithFormat:@"%@/HeaderImage.jpeg", kDocumentPath]
+
 
 /**
  * RGB 颜色

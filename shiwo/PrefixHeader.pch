@@ -11,6 +11,13 @@
 
 //此版本iOS 9.0 以后可用
 
+#import <MAMapKit/MAMapKit.h>
+#import <AMapNaviKit/AMapNaviKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
+
 #import "Global.h"
 #import "Const.h"
 #import "Common.h"

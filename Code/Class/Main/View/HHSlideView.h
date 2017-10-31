@@ -9,24 +9,26 @@
 #import <UIKit/UIKit.h>
 
 typedef void ((^callBack)(NSString *str));
+typedef void (^SlideUserCtrolBlock)(NSString *str);
 
 @interface HHSlideView : UIView
 
+@property (nonatomic, copy)callBack block;
+@property (nonatomic, copy)SlideUserCtrolBlock slideUserCtrolBlock;
+
 - (instancetype)initWithSupView:(UIView *)supView;
 
-- (void)hidden;
+- (void)hiddenAnimated:(BOOL)animated;
 
-- (void)show;
+- (void)showAnimated:(BOOL)animated;
 
-
-
-
+- (void)setHeaderImageWithFirstLoad:(BOOL)first;
 
 
 
 
 
-@property (nonatomic ,copy)callBack block;
+
 
 
 

@@ -27,6 +27,8 @@
 		2DC221C31FA70EBD000184DD /* HHServicePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221C21FA70EBD000184DD /* HHServicePickerView.m */; };
 		2DC221CF1FA72230000184DD /* HHContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221CE1FA72230000184DD /* HHContentView.m */; };
 		2DC221D11FA72240000184DD /* HHContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC221D01FA72240000184DD /* HHContentView.xib */; };
+		2DC221D41FA72A7C000184DD /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221D31FA72A7C000184DD /* MapManager.m */; };
+		2DC221E31FA76CDF000184DD /* HHUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221E21FA76CDF000184DD /* HHUserController.m */; };
 		6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,10 @@
 		2DC221CD1FA72230000184DD /* HHContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHContentView.h; sourceTree = "<group>"; };
 		2DC221CE1FA72230000184DD /* HHContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHContentView.m; sourceTree = "<group>"; };
 		2DC221D01FA72240000184DD /* HHContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHContentView.xib; sourceTree = "<group>"; };
+		2DC221D21FA72A7C000184DD /* MapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
+		2DC221D31FA72A7C000184DD /* MapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
+		2DC221E11FA76CDF000184DD /* HHUserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHUserController.h; sourceTree = "<group>"; };
+		2DC221E21FA76CDF000184DD /* HHUserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHUserController.m; sourceTree = "<group>"; };
 		30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +193,8 @@
 				2DC2219E1FA6F25B000184DD /* Const.h */,
 				2DC2219F1FA6F25B000184DD /* Global.h */,
 				2DC221A01FA6F25B000184DD /* Global.m */,
+				2DC221D21FA72A7C000184DD /* MapManager.h */,
+				2DC221D31FA72A7C000184DD /* MapManager.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -229,6 +237,8 @@
 				2DC221BB1FA70B5E000184DD /* YDRegistController.h */,
 				2DC221BC1FA70B5E000184DD /* YDRegistController.m */,
 				2DC221BE1FA70BE3000184DD /* YDRegistController_iPhone.xib */,
+				2DC221E11FA76CDF000184DD /* HHUserController.h */,
+				2DC221E21FA76CDF000184DD /* HHUserController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -395,6 +405,7 @@
 			files = (
 				2DC221AB1FA6F25B000184DD /* HHNetwork.m in Sources */,
 				2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */,
+				2DC221D41FA72A7C000184DD /* MapManager.m in Sources */,
 				2DC221A61FA6F25B000184DD /* HHBaseController.m in Sources */,
 				2DC221CF1FA72230000184DD /* HHContentView.m in Sources */,
 				2DC221A51FA6F25B000184DD /* AppDelegate+Pay.m in Sources */,
@@ -402,6 +413,7 @@
 				2DC221AA1FA6F25B000184DD /* Global.m in Sources */,
 				2DC221C31FA70EBD000184DD /* HHServicePickerView.m in Sources */,
 				2DC221881FA6F0DF000184DD /* main.m in Sources */,
+				2DC221E31FA76CDF000184DD /* HHUserController.m in Sources */,
 				2DC221A71FA6F25B000184DD /* HHMainController.m in Sources */,
 				2DC221B31FA70190000184DD /* HHSlideView.m in Sources */,
 				2DC2217A1FA6F0DF000184DD /* AppDelegate.m in Sources */,
