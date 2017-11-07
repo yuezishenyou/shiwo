@@ -29,6 +29,17 @@
 {
     [self leftAction];
 }
+- (void)leftAction
+{
+    [self.slideView showAnimated:YES];
+    [self.slideView setHeaderImageWithFirstLoad:YES];
+}
+
+- (void)loadView
+{
+    [super loadView];
+    self.view.frame = [[UIScreen mainScreen]bounds];
+}
 
 - (void)viewDidLoad {
     
@@ -38,48 +49,17 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    [self initSubView];
+    [self initSubViews];
     
     [self addBlock];
     
-    [self initMap];
-    
+    [self locateMapViewInView:self.view frame:self.view.bounds completion:nil];
     
 
 }
 
-- (void)initMap
-{
-    MAMapView *mapView = [[MAMapView alloc]initWithFrame:self.view.bounds];
-    
-    mapView.showsUserLocation = YES;
-    
-    mapView.userTrackingMode = MAUserTrackingModeFollow;
-    
-    [self.view addSubview:mapView];
-    
-    [self.view sendSubviewToBack:mapView];
-    
-}
 
 
-#pragma mark - 初始化侧栏按钮
--(void)initSubView
-{
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"侧滑" style:UIBarButtonItemStyleDone target:self action:@selector(leftAction)];
-    
-    //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"右" style:UIBarButtonItemStyleDone target:self action:@selector(rightAction)];
-    
-
-    self.slideView = [[HHSlideView alloc]initWithSupView:self.view];
-    
-    
-    
-    
-   
-    
-}
 
 - (void)addBlock
 {
@@ -99,8 +79,7 @@
     [self.slideView setSlideUserCtrolBlock:^(NSString *str) {
 
         HHUserController *vc = [[HHUserController alloc]init];
-        
-      
+    
         
         [vc setChangeHeaderImage:^{
             NSLog(@"-----事件响应-----");
@@ -111,53 +90,48 @@
 
     }];
     
- 
-//    [self.personView setClickHeaderView:^{
-//
-//        YDPersonInfoController *vc = [[YDPersonInfoController alloc] initWithNibName:@"YDPersonInfoController" bundle:nil];
-//        [vc setChangeHeaderImage:^{
-//            [weakself.personView setHeaderImageWithFirstLoad:weakself.firstLoad];
-//        }];
-//        vc.model = weakself.personModel;
-//        [weakself.navigationController pushViewController:vc animated:YES];
-//    }];
     
     
     
 }
 
 
-//- (void)pushUserController
-//{
-//    HHUserController *vc = [[HHUserController alloc]init];
-//
-//    [vc setChangeHeaderImage:^{
-//        NSLog(@"-----改变图片mainvc----");
-//        [self.slideView setHeaderImageWithFirstLoad:YES];
-//    }];
-//
-//    [self.navigationController pushViewController:vc animated:YES];
-//}
 
 
 
 
 
 
-- (void)leftAction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma mark - 初始化侧栏按钮
+-(void)initSubViews
 {
-    //监视侧栏是否打开
-    //NSLog(@"--开--");
-    [self.slideView showAnimated:YES];
-    [self.slideView setHeaderImageWithFirstLoad:YES];
-   
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"侧滑" style:UIBarButtonItemStyleDone target:self action:@selector(leftAction)];
+    
+    self.slideView = [[HHSlideView alloc]initWithSupView:self.view];
+    
 }
-
-
-
-
-
-
 
 
 

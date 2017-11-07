@@ -179,7 +179,7 @@
     }
     else
     {
-        NSLog(@"---没图片---");
+        //NSLog(@"---没图片---");
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:_photoUrl]]];
             

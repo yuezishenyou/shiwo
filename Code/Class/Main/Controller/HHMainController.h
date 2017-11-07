@@ -7,7 +7,10 @@
 //
 
 #import "HHBaseController.h"
+#import "HHAMapHelper.h"
 
-@interface HHMainController : HHBaseController
+@interface HHMainController : HHAMapHelper
+
+
 
 @end

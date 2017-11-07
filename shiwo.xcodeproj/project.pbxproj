@@ -13,6 +13,7 @@
 		2D5160671FB14382004907DB /* YDNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5160621FB14381004907DB /* YDNetWork.m */; };
 		2D5160681FB14382004907DB /* DejNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5160631FB14381004907DB /* DejNetwork.m */; };
 		2D5160691FB14382004907DB /* YDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5160661FB14382004907DB /* YDNetworking.m */; };
+		2D5E26521FB1A29B002F0827 /* HHAMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E26511FB1A29B002F0827 /* HHAMapHelper.m */; };
 		2DC2217A1FA6F0DF000184DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221791FA6F0DF000184DD /* AppDelegate.m */; };
 		2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2217C1FA6F0DF000184DD /* ViewController.m */; };
 		2DC221801FA6F0DF000184DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2217E1FA6F0DF000184DD /* Main.storyboard */; };
@@ -50,6 +51,8 @@
 		2D5160641FB14382004907DB /* YDNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetworking.h; sourceTree = "<group>"; };
 		2D5160651FB14382004907DB /* YDNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetWork.h; sourceTree = "<group>"; };
 		2D5160661FB14382004907DB /* YDNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworking.m; sourceTree = "<group>"; };
+		2D5E26501FB1A29B002F0827 /* HHAMapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAMapHelper.h; sourceTree = "<group>"; };
+		2D5E26511FB1A29B002F0827 /* HHAMapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAMapHelper.m; sourceTree = "<group>"; };
 		2DC221751FA6F0DF000184DD /* shiwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shiwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC221781FA6F0DF000184DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DC221791FA6F0DF000184DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 		2DC221931FA6F25B000184DD /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				2D5E26501FB1A29B002F0827 /* HHAMapHelper.h */,
+				2D5E26511FB1A29B002F0827 /* HHAMapHelper.m */,
 				2DC221941FA6F25B000184DD /* HHBaseController.h */,
 				2DC221951FA6F25B000184DD /* HHBaseController.m */,
 			);
@@ -459,6 +464,7 @@
 				2DC221881FA6F0DF000184DD /* main.m in Sources */,
 				2DC221E31FA76CDF000184DD /* HHUserController.m in Sources */,
 				2DC221A71FA6F25B000184DD /* HHMainController.m in Sources */,
+				2D5E26521FB1A29B002F0827 /* HHAMapHelper.m in Sources */,
 				2DC221B31FA70190000184DD /* HHSlideView.m in Sources */,
 				2DC2217A1FA6F0DF000184DD /* AppDelegate.m in Sources */,
 				2DC221BA1FA708E0000184DD /* HHLoginController.m in Sources */,
