@@ -14,6 +14,7 @@ typedef void (^SlideUserCtrolBlock)(NSString *str);
 @interface HHSlideView : UIView
 
 @property (nonatomic, copy)callBack block;
+
 @property (nonatomic, copy)SlideUserCtrolBlock slideUserCtrolBlock;
 
 - (instancetype)initWithSupView:(UIView *)supView;

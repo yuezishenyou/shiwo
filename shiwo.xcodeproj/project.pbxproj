@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D16342B1FA8D5E000D0FC31 /* UIView+animated.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D16342A1FA8D5E000D0FC31 /* UIView+animated.m */; };
+		2D51605E1FB06617004907DB /* YDHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D51605D1FB06617004907DB /* YDHeaderView.m */; };
+		2D5160601FB06641004907DB /* YDHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D51605F1FB06641004907DB /* YDHeaderView.xib */; };
+		2D5160671FB14382004907DB /* YDNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5160621FB14381004907DB /* YDNetWork.m */; };
+		2D5160681FB14382004907DB /* DejNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5160631FB14381004907DB /* DejNetwork.m */; };
+		2D5160691FB14382004907DB /* YDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5160661FB14382004907DB /* YDNetworking.m */; };
 		2DC2217A1FA6F0DF000184DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221791FA6F0DF000184DD /* AppDelegate.m */; };
 		2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2217C1FA6F0DF000184DD /* ViewController.m */; };
 		2DC221801FA6F0DF000184DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2217E1FA6F0DF000184DD /* Main.storyboard */; };
@@ -19,7 +25,6 @@
 		2DC221A81FA6F25B000184DD /* HHMainController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2219A1FA6F25B000184DD /* HHMainController_iPad.xib */; };
 		2DC221A91FA6F25B000184DD /* HHMainController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2219B1FA6F25B000184DD /* HHMainController_iPhone.xib */; };
 		2DC221AA1FA6F25B000184DD /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221A01FA6F25B000184DD /* Global.m */; };
-		2DC221AB1FA6F25B000184DD /* HHNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221A41FA6F25B000184DD /* HHNetwork.m */; };
 		2DC221B31FA70190000184DD /* HHSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221B21FA70190000184DD /* HHSlideView.m */; };
 		2DC221BA1FA708E0000184DD /* HHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221B91FA708E0000184DD /* HHLoginController.m */; };
 		2DC221BD1FA70B5E000184DD /* YDRegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221BC1FA70B5E000184DD /* YDRegistController.m */; };
@@ -34,6 +39,17 @@
 
 /* Begin PBXFileReference section */
 		0BD9D39E6539CA3552B4DF99 /* Pods-shiwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.debug.xcconfig"; sourceTree = "<group>"; };
+		2D1634291FA8D5E000D0FC31 /* UIView+animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+animated.h"; sourceTree = "<group>"; };
+		2D16342A1FA8D5E000D0FC31 /* UIView+animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+animated.m"; sourceTree = "<group>"; };
+		2D51605C1FB06617004907DB /* YDHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHeaderView.h; sourceTree = "<group>"; };
+		2D51605D1FB06617004907DB /* YDHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHeaderView.m; sourceTree = "<group>"; };
+		2D51605F1FB06641004907DB /* YDHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YDHeaderView.xib; sourceTree = "<group>"; };
+		2D5160611FB14381004907DB /* DejNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejNetwork.h; sourceTree = "<group>"; };
+		2D5160621FB14381004907DB /* YDNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetWork.m; sourceTree = "<group>"; };
+		2D5160631FB14381004907DB /* DejNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejNetwork.m; sourceTree = "<group>"; };
+		2D5160641FB14382004907DB /* YDNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetworking.h; sourceTree = "<group>"; };
+		2D5160651FB14382004907DB /* YDNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetWork.h; sourceTree = "<group>"; };
+		2D5160661FB14382004907DB /* YDNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworking.m; sourceTree = "<group>"; };
 		2DC221751FA6F0DF000184DD /* shiwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shiwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC221781FA6F0DF000184DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DC221791FA6F0DF000184DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,8 +72,6 @@
 		2DC2219E1FA6F25B000184DD /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 		2DC2219F1FA6F25B000184DD /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		2DC221A01FA6F25B000184DD /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
-		2DC221A31FA6F25B000184DD /* HHNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetwork.h; sourceTree = "<group>"; };
-		2DC221A41FA6F25B000184DD /* HHNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetwork.m; sourceTree = "<group>"; };
 		2DC221AC1FA6F412000184DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2DC221B11FA70190000184DD /* HHSlideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHSlideView.h; sourceTree = "<group>"; };
 		2DC221B21FA70190000184DD /* HHSlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHSlideView.m; sourceTree = "<group>"; };
@@ -91,6 +105,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D1634281FA8D5E000D0FC31 /* HHViewAnimated */ = {
+			isa = PBXGroup;
+			children = (
+				2D1634291FA8D5E000D0FC31 /* UIView+animated.h */,
+				2D16342A1FA8D5E000D0FC31 /* UIView+animated.m */,
+			);
+			path = HHViewAnimated;
+			sourceTree = "<group>";
+		};
+		2D51605B1FB065EF004907DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D51605C1FB06617004907DB /* YDHeaderView.h */,
+				2D51605D1FB06617004907DB /* YDHeaderView.m */,
+				2D51605F1FB06641004907DB /* YDHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2DC2216C1FA6F0DF000184DD = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +235,7 @@
 		2DC221A11FA6F25B000184DD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2D1634281FA8D5E000D0FC31 /* HHViewAnimated */,
 				2DC221C01FA70E71000184DD /* HHPickerView */,
 				2DC221A21FA6F25B000184DD /* HHNetwork */,
 			);
@@ -211,8 +245,12 @@
 		2DC221A21FA6F25B000184DD /* HHNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				2DC221A31FA6F25B000184DD /* HHNetwork.h */,
-				2DC221A41FA6F25B000184DD /* HHNetwork.m */,
+				2D5160611FB14381004907DB /* DejNetwork.h */,
+				2D5160631FB14381004907DB /* DejNetwork.m */,
+				2D5160651FB14382004907DB /* YDNetWork.h */,
+				2D5160621FB14381004907DB /* YDNetWork.m */,
+				2D5160641FB14382004907DB /* YDNetworking.h */,
+				2D5160661FB14382004907DB /* YDNetworking.m */,
 			);
 			path = HHNetwork;
 			sourceTree = "<group>";
@@ -232,6 +270,7 @@
 		2DC221B71FA708D0000184DD /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2D51605B1FB065EF004907DB /* View */,
 				2DC221B81FA708E0000184DD /* HHLoginController.h */,
 				2DC221B91FA708E0000184DD /* HHLoginController.m */,
 				2DC221BB1FA70B5E000184DD /* YDRegistController.h */,
@@ -332,6 +371,7 @@
 			files = (
 				2DC221D11FA72240000184DD /* HHContentView.xib in Resources */,
 				2DC221A81FA6F25B000184DD /* HHMainController_iPad.xib in Resources */,
+				2D5160601FB06641004907DB /* YDHeaderView.xib in Resources */,
 				2DC221851FA6F0DF000184DD /* LaunchScreen.storyboard in Resources */,
 				2DC221821FA6F0DF000184DD /* Assets.xcassets in Resources */,
 				2DC221801FA6F0DF000184DD /* Main.storyboard in Resources */,
@@ -403,11 +443,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC221AB1FA6F25B000184DD /* HHNetwork.m in Sources */,
+				2D51605E1FB06617004907DB /* YDHeaderView.m in Sources */,
 				2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */,
+				2D5160681FB14382004907DB /* DejNetwork.m in Sources */,
 				2DC221D41FA72A7C000184DD /* MapManager.m in Sources */,
+				2D16342B1FA8D5E000D0FC31 /* UIView+animated.m in Sources */,
+				2D5160671FB14382004907DB /* YDNetWork.m in Sources */,
 				2DC221A61FA6F25B000184DD /* HHBaseController.m in Sources */,
 				2DC221CF1FA72230000184DD /* HHContentView.m in Sources */,
+				2D5160691FB14382004907DB /* YDNetworking.m in Sources */,
 				2DC221A51FA6F25B000184DD /* AppDelegate+Pay.m in Sources */,
 				2DC221BD1FA70B5E000184DD /* YDRegistController.m in Sources */,
 				2DC221AA1FA6F25B000184DD /* Global.m in Sources */,
@@ -559,7 +603,7 @@
 				INFOPLIST_FILE = shiwo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maoziyue.shiwo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maossiswo.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -577,7 +621,7 @@
 				INFOPLIST_FILE = shiwo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maoziyue.shiwo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maossiswo.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

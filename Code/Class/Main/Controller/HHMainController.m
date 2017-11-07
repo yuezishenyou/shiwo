@@ -10,23 +10,31 @@
 #import "HHSlideView.h"
 #import "HHLoginController.h"
 #import "HHUserController.h"
+#import <AFNetworking.h>
+#import "UIView+animated.h"
+#import "Global.h"
 
 @interface HHMainController ()
 
 @property (nonatomic, strong) HHSlideView *slideView;
 
-/** 记录是否打开侧边栏 */
-@property (nonatomic, assign) BOOL openSlide;
+
 
 
 @end
 
 @implementation HHMainController
 
+- (void)backClick
+{
+    [self leftAction];
+}
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
-    self.title = @"main";
+    self.titleString = @"main";
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
@@ -34,9 +42,25 @@
     
     [self addBlock];
     
+    [self initMap];
+    
+    
+
 }
 
-
+- (void)initMap
+{
+    MAMapView *mapView = [[MAMapView alloc]initWithFrame:self.view.bounds];
+    
+    mapView.showsUserLocation = YES;
+    
+    mapView.userTrackingMode = MAUserTrackingModeFollow;
+    
+    [self.view addSubview:mapView];
+    
+    [self.view sendSubviewToBack:mapView];
+    
+}
 
 
 #pragma mark - 初始化侧栏按钮
@@ -45,9 +69,15 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"侧滑" style:UIBarButtonItemStyleDone target:self action:@selector(leftAction)];
     
+    //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"右" style:UIBarButtonItemStyleDone target:self action:@selector(rightAction)];
+    
+
+    self.slideView = [[HHSlideView alloc]initWithSupView:self.view];
     
     
-    self.slideView = [[HHSlideView alloc]initWithSupView:self.navigationController.view];
+    
+    
+   
     
 }
 
@@ -65,33 +95,63 @@
         [strongSelf.navigationController pushViewController:vc animated:YES];
     }];
     
-    //
+    
     [self.slideView setSlideUserCtrolBlock:^(NSString *str) {
-        
+
         HHUserController *vc = [[HHUserController alloc]init];
         
+      
+        
+        [vc setChangeHeaderImage:^{
+            NSLog(@"-----事件响应-----");
+            [weakSelf.slideView setHeaderImageWithFirstLoad:NO];
+        }];
+
         [weakSelf.navigationController pushViewController:vc animated:YES];
+
     }];
+    
+ 
+//    [self.personView setClickHeaderView:^{
+//
+//        YDPersonInfoController *vc = [[YDPersonInfoController alloc] initWithNibName:@"YDPersonInfoController" bundle:nil];
+//        [vc setChangeHeaderImage:^{
+//            [weakself.personView setHeaderImageWithFirstLoad:weakself.firstLoad];
+//        }];
+//        vc.model = weakself.personModel;
+//        [weakself.navigationController pushViewController:vc animated:YES];
+//    }];
     
     
     
 }
+
+
+//- (void)pushUserController
+//{
+//    HHUserController *vc = [[HHUserController alloc]init];
+//
+//    [vc setChangeHeaderImage:^{
+//        NSLog(@"-----改变图片mainvc----");
+//        [self.slideView setHeaderImageWithFirstLoad:YES];
+//    }];
+//
+//    [self.navigationController pushViewController:vc animated:YES];
+//}
+
+
+
 
 
 
 - (void)leftAction
 {
     //监视侧栏是否打开
-    NSLog(@"--开--");
+    //NSLog(@"--开--");
     [self.slideView showAnimated:YES];
     [self.slideView setHeaderImageWithFirstLoad:YES];
    
 }
-
-
-
-
-
 
 
 

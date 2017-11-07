@@ -13,6 +13,15 @@
 #define kScreenW     ([UIScreen mainScreen].bounds.size.width)
 #define kBili        ([[UIScreen mainScreen]bounds].size.width / 375.0)
 #define KNavigationH (self.navigationController.navigationBar.frame.size.height + [[UIApplication sharedApplication]statusBarFrame].size.height)
+#define kNavH        (self.navigationController.navigationBar.frame.size.height)
+#define kStatusH     ([[UIApplication sharedApplication]statusBarFrame].size.height)
+
+
+#define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+
+#define headerPath  [NSString stringWithFormat:@"%@/HeaderImage.jpeg", kDocumentPath]
+
+
 
 
 #define IS_IPHONE ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)

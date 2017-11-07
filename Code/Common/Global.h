@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^ReadChangeHeaderImage)(void);
+
+typedef void (^ChangeHeaderImageBlock)(void);
+
+
 @interface Global : NSObject
+
++ (instancetype)manager;
+
+@property (nonatomic, copy) ChangeHeaderImageBlock changeHeaderImageBlock;
+
+- (void)readChangeHeaderImage:(ChangeHeaderImageBlock)block;
+- (void)setChangeHeaderImage:(UIImage *)image;
+
+
+
 
 @end

@@ -99,7 +99,7 @@
     if (_slideUserCtrolBlock) {
         _slideUserCtrolBlock(@"11");
     }
-    [self hiddenAnimated:NO];
+    //[self hiddenAnimated:NO];
 }
 
 
@@ -162,22 +162,24 @@
 
 - (void)setHeaderImageWithFirstLoad:(BOOL)first
 {
-    _photoUrl = @"http://114.215.208.42:8098/h_way/gate?sid=2013&uid=3282";
+    _photoUrl = @"http://114.215.208.42:8098/h_way/gate?sid=2013&uid=1484";
     
     UIImage *image = nil;
     
     if (!first)
     {
         image = [UIImage imageWithContentsOfFile:headerPath];
+        NSLog(@"----不是第一次---");
     }
     
     if (image)
     {
         self.photoImageV.image = image;
+        NSLog(@"---有图片---");
     }
     else
     {
-        
+        NSLog(@"---没图片---");
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:_photoUrl]]];
             

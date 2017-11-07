@@ -10,4 +10,7 @@
 
 @interface HHUserController : HHBaseController
 
+@property (nonatomic,copy)void (^changeHeaderImage)(void);
+
+
 @end
