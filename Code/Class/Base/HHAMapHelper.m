@@ -222,7 +222,7 @@
     if(updatingLocation)
     {
         //取出当前位置的坐标
-        //NSLog(@"------lat:%f,lon:%f------",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+        NSLog(@"------lat:%f,lon:%f------",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
     }
     self.currentLocation = [userLocation.location copy];
     
@@ -274,11 +274,11 @@
 }
 
 
-- (void)searchDriveRouteWithStartCoordinate:(CLLocationCoordinate2D)startCoordinate destinationCoordinate:(CLLocationCoordinate2D)destinationCoordinate
+
+- (void)searchDriveRouteWithStartAnnotation:(MAPointAnnotation*)startAnnotation destinationAnnotation:(MAPointAnnotation*)destinationAnnotation
 {
-    
-    self.startAnnotation.coordinate = startCoordinate;
-    self.destinationAnnotation.coordinate = destinationCoordinate;
+    self.startAnnotation= startAnnotation;
+    self.destinationAnnotation = destinationAnnotation;
     
     if (self.drivingRouteSearchRequest == nil) {
         self.drivingRouteSearchRequest = [[AMapDrivingRouteSearchRequest alloc] init];
@@ -296,6 +296,11 @@
     [self.search AMapDrivingRouteSearch:self.drivingRouteSearchRequest];//驾车路径规划查询 onRouteSearchDone
     
 }
+
+
+
+
+
 
 - (void)searchPOIKeywords:(NSString *)keywords
 {
@@ -424,7 +429,11 @@
     return distance;//两点距离
 }
 
-
+- (void)clearMap
+{
+    [self.mapView removeAnnotations:self.mapView.annotations];
+    [self.mapView removeOverlays:self.mapView.overlays];
+}
 
 
 

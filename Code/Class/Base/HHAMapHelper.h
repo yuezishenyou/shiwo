@@ -109,8 +109,7 @@ typedef void(^HYBUserLocationCompletion)(BOOL finish);
 - (void)searchReGeocodeWithCoordinate:(CLLocationCoordinate2D)coordinate;
 
 
-- (void)searchDriveRouteWithStartCoordinate:(CLLocationCoordinate2D)startCoordinate
-                      destinationCoordinate:(CLLocationCoordinate2D)destinationCoordinate;
+- (void)searchDriveRouteWithStartAnnotation:(MAPointAnnotation*)startAnnotation destinationAnnotation:(MAPointAnnotation*)destinationAnnotation;
 
 - (void)searchPOIKeywords:(NSString *)keywords;
 
@@ -168,7 +167,7 @@ typedef void(^HYBUserLocationCompletion)(BOOL finish);
 
 - (CGFloat)mapDistanceBetweenCoordinate:(CLLocationCoordinate2D )coordinateA AndCoordinate:(CLLocationCoordinate2D)coordinateB;
 
-
+- (void)clearMap;
 
 
 

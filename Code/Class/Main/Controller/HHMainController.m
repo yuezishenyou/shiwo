@@ -13,11 +13,21 @@
 #import <AFNetworking.h>
 #import "UIView+animated.h"
 #import "Global.h"
+#import "HHMenuView.h"
 
-@interface HHMainController ()
+@interface HHMainController ()<AMapSearchDelegate>
 
-@property (nonatomic, strong) HHSlideView *slideView;
+@property (nonatomic, strong) HHSlideView *slideView;//侧滑面
 
+@property (nonatomic, strong) HHMenuView *menuView;//底部
+
+@property (nonatomic, strong) MAPointAnnotation *start;
+@property (nonatomic, strong) MAPointAnnotation *end;
+
+
+
+
+@property (nonatomic,strong)AMapDrivingRouteSearchRequest *drivingRouteSearchRequest;//驾车路径规划查询;
 
 
 
@@ -55,8 +65,19 @@
     
     [self locateMapViewInView:self.view frame:self.view.bounds completion:nil];
     
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -91,8 +112,43 @@
     }];
     
     
+    //
+    [self.menuView setSubmitOrderBlock:^{
+        
+        NSLog(@"---提交订单---");
+        //lat:31.232080,lon:121.365597
+        //lat:31.232080,lon:121.365597
+        [weakSelf submitOrder];
+        
+    }];
     
     
+}
+
+
+- (void)submitOrder
+{
+    [self clearMap];
+    
+    self.start = [[MAPointAnnotation alloc]init];
+    self.start.coordinate = CLLocationCoordinate2DMake(31.232080, 121.365597);
+
+    self.end = [[MAPointAnnotation alloc]init];
+    self.end.coordinate = CLLocationCoordinate2DMake(31.232580, 121.313597);
+    
+    [self.mapView addAnnotation:self.start];
+    [self.mapView addAnnotation:self.end];
+    
+     [self.mapView setCenterCoordinate:self.start.coordinate animated:YES];
+
+    
+    
+    
+    
+    
+    //[self searchDriveRouteWithStartAnnotation:self.start destinationAnnotation:self.end];
+    
+    //[self searchReGeocodeWithCoordinate:self.start.coordinate];
 }
 
 
@@ -100,6 +156,16 @@
 
 
 
+
+
+
+
+
+- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
+{
+    [super mapView:mapView viewForAnnotation:annotation];
+    return nil;
+}
 
 
 
@@ -129,7 +195,21 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"侧滑" style:UIBarButtonItemStyleDone target:self action:@selector(leftAction)];
     
+    self.menuView = [[HHMenuView alloc]initWithFrame:CGRectMake(0, kScreenH - 80, kScreenW, 80)];
+    
+    [self.view addSubview:self.menuView];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     self.slideView = [[HHSlideView alloc]initWithSupView:self.view];
+    [self.view bringSubviewToFront:self.slideView];
     
 }
 

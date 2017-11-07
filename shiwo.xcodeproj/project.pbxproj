@@ -14,6 +14,7 @@
 		2D5160681FB14382004907DB /* DejNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5160631FB14381004907DB /* DejNetwork.m */; };
 		2D5160691FB14382004907DB /* YDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5160661FB14382004907DB /* YDNetworking.m */; };
 		2D5E26521FB1A29B002F0827 /* HHAMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E26511FB1A29B002F0827 /* HHAMapHelper.m */; };
+		2D5E26551FB1A954002F0827 /* HHMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E26541FB1A954002F0827 /* HHMenuView.m */; };
 		2DC2217A1FA6F0DF000184DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221791FA6F0DF000184DD /* AppDelegate.m */; };
 		2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2217C1FA6F0DF000184DD /* ViewController.m */; };
 		2DC221801FA6F0DF000184DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC2217E1FA6F0DF000184DD /* Main.storyboard */; };
@@ -53,6 +54,8 @@
 		2D5160661FB14382004907DB /* YDNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworking.m; sourceTree = "<group>"; };
 		2D5E26501FB1A29B002F0827 /* HHAMapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAMapHelper.h; sourceTree = "<group>"; };
 		2D5E26511FB1A29B002F0827 /* HHAMapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAMapHelper.m; sourceTree = "<group>"; };
+		2D5E26531FB1A954002F0827 /* HHMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHMenuView.h; sourceTree = "<group>"; };
+		2D5E26541FB1A954002F0827 /* HHMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHMenuView.m; sourceTree = "<group>"; };
 		2DC221751FA6F0DF000184DD /* shiwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shiwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC221781FA6F0DF000184DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DC221791FA6F0DF000184DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				2DC221CD1FA72230000184DD /* HHContentView.h */,
 				2DC221CE1FA72230000184DD /* HHContentView.m */,
 				2DC221D01FA72240000184DD /* HHContentView.xib */,
+				2D5E26531FB1A954002F0827 /* HHMenuView.h */,
+				2D5E26541FB1A954002F0827 /* HHMenuView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -348,6 +353,14 @@
 					2DC221741FA6F0DF000184DD = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -449,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D51605E1FB06617004907DB /* YDHeaderView.m in Sources */,
+				2D5E26551FB1A954002F0827 /* HHMenuView.m in Sources */,
 				2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */,
 				2D5160681FB14382004907DB /* DejNetwork.m in Sources */,
 				2DC221D41FA72A7C000184DD /* MapManager.m in Sources */,

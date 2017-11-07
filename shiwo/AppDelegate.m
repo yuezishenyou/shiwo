@@ -19,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [AMapServices sharedServices].apiKey = AMapKey;
+    [AMapServices sharedServices].enableHTTPS = YES;
     
     
     [self myCode];
