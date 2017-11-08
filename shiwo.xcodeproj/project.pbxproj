@@ -43,6 +43,7 @@
 		2DD9F3C01FB2CB4A003A0ACE /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3BE1FB2CB49003A0ACE /* CommonUtility.m */; };
 		2DD9F3FB1FB2DBA2003A0ACE /* YDStartAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3FA1FB2DBA2003A0ACE /* YDStartAnnotationView.m */; };
 		2DD9F3FE1FB2DBEE003A0ACE /* YDStartPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3FD1FB2DBEE003A0ACE /* YDStartPointAnnotation.m */; };
+		2DD9F4281FB3446A003A0ACE /* HHAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4271FB3446A003A0ACE /* HHAnimatedController.m */; };
 		6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,8 @@
 		2DD9F3FA1FB2DBA2003A0ACE /* YDStartAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDStartAnnotationView.m; sourceTree = "<group>"; };
 		2DD9F3FC1FB2DBEE003A0ACE /* YDStartPointAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDStartPointAnnotation.h; sourceTree = "<group>"; };
 		2DD9F3FD1FB2DBEE003A0ACE /* YDStartPointAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDStartPointAnnotation.m; sourceTree = "<group>"; };
+		2DD9F4261FB3446A003A0ACE /* HHAnimatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAnimatedController.h; sourceTree = "<group>"; };
+		2DD9F4271FB3446A003A0ACE /* HHAnimatedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAnimatedController.m; sourceTree = "<group>"; };
 		30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +247,8 @@
 				2DC221991FA6F25B000184DD /* HHMainController.m */,
 				2DC2219A1FA6F25B000184DD /* HHMainController_iPad.xib */,
 				2DC2219B1FA6F25B000184DD /* HHMainController_iPhone.xib */,
+				2DD9F4261FB3446A003A0ACE /* HHAnimatedController.h */,
+				2DD9F4271FB3446A003A0ACE /* HHAnimatedController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -522,6 +527,7 @@
 				2D16342B1FA8D5E000D0FC31 /* UIView+animated.m in Sources */,
 				2D5160671FB14382004907DB /* YDNetWork.m in Sources */,
 				2DC221A61FA6F25B000184DD /* HHBaseController.m in Sources */,
+				2DD9F4281FB3446A003A0ACE /* HHAnimatedController.m in Sources */,
 				2DC221CF1FA72230000184DD /* HHContentView.m in Sources */,
 				2D5160691FB14382004907DB /* YDNetworking.m in Sources */,
 				2DD9F3FB1FB2DBA2003A0ACE /* YDStartAnnotationView.m in Sources */,

@@ -22,7 +22,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    //self.navigationController.navigationBarHidden = YES;
 }
 
 
@@ -34,7 +34,7 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    [self setNavigationController];
+    //[self setNavigationController];
     
 }
 
