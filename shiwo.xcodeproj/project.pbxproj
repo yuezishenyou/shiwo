@@ -36,6 +36,13 @@
 		2DC221D11FA72240000184DD /* HHContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC221D01FA72240000184DD /* HHContentView.xib */; };
 		2DC221D41FA72A7C000184DD /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221D31FA72A7C000184DD /* MapManager.m */; };
 		2DC221E31FA76CDF000184DD /* HHUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC221E21FA76CDF000184DD /* HHUserController.m */; };
+		2DD9F3B41FB2CA72003A0ACE /* MANaviRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3B21FB2CA71003A0ACE /* MANaviRoute.m */; };
+		2DD9F3B71FB2CAB7003A0ACE /* MANaviAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3B61FB2CAB7003A0ACE /* MANaviAnnotation.m */; };
+		2DD9F3BC1FB2CAFF003A0ACE /* LineDashPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3B81FB2CAFF003A0ACE /* LineDashPolyline.m */; };
+		2DD9F3BD1FB2CAFF003A0ACE /* MANaviPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3BB1FB2CAFF003A0ACE /* MANaviPolyline.m */; };
+		2DD9F3C01FB2CB4A003A0ACE /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3BE1FB2CB49003A0ACE /* CommonUtility.m */; };
+		2DD9F3FB1FB2DBA2003A0ACE /* YDStartAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3FA1FB2DBA2003A0ACE /* YDStartAnnotationView.m */; };
+		2DD9F3FE1FB2DBEE003A0ACE /* YDStartPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3FD1FB2DBEE003A0ACE /* YDStartPointAnnotation.m */; };
 		6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +102,20 @@
 		2DC221D31FA72A7C000184DD /* MapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
 		2DC221E11FA76CDF000184DD /* HHUserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHUserController.h; sourceTree = "<group>"; };
 		2DC221E21FA76CDF000184DD /* HHUserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHUserController.m; sourceTree = "<group>"; };
+		2DD9F3B21FB2CA71003A0ACE /* MANaviRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANaviRoute.m; sourceTree = "<group>"; };
+		2DD9F3B31FB2CA72003A0ACE /* MANaviRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANaviRoute.h; sourceTree = "<group>"; };
+		2DD9F3B51FB2CAB7003A0ACE /* MANaviAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANaviAnnotation.h; sourceTree = "<group>"; };
+		2DD9F3B61FB2CAB7003A0ACE /* MANaviAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANaviAnnotation.m; sourceTree = "<group>"; };
+		2DD9F3B81FB2CAFF003A0ACE /* LineDashPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineDashPolyline.m; sourceTree = "<group>"; };
+		2DD9F3B91FB2CAFF003A0ACE /* MANaviPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANaviPolyline.h; sourceTree = "<group>"; };
+		2DD9F3BA1FB2CAFF003A0ACE /* LineDashPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineDashPolyline.h; sourceTree = "<group>"; };
+		2DD9F3BB1FB2CAFF003A0ACE /* MANaviPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANaviPolyline.m; sourceTree = "<group>"; };
+		2DD9F3BE1FB2CB49003A0ACE /* CommonUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtility.m; sourceTree = "<group>"; };
+		2DD9F3BF1FB2CB4A003A0ACE /* CommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
+		2DD9F3F91FB2DBA2003A0ACE /* YDStartAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDStartAnnotationView.h; sourceTree = "<group>"; };
+		2DD9F3FA1FB2DBA2003A0ACE /* YDStartAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDStartAnnotationView.m; sourceTree = "<group>"; };
+		2DD9F3FC1FB2DBEE003A0ACE /* YDStartPointAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDStartPointAnnotation.h; sourceTree = "<group>"; };
+		2DD9F3FD1FB2DBEE003A0ACE /* YDStartPointAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDStartPointAnnotation.m; sourceTree = "<group>"; };
 		30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +264,8 @@
 		2DC221A11FA6F25B000184DD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2DD9F3F51FB2DB4C003A0ACE /* AMapCustom */,
+				2DD9F3B11FB2C9FC003A0ACE /* AMapUtil */,
 				2D1634281FA8D5E000D0FC31 /* HHViewAnimated */,
 				2DC221C01FA70E71000184DD /* HHPickerView */,
 				2DC221A21FA6F25B000184DD /* HHNetwork */,
@@ -299,6 +322,34 @@
 				2DC221C21FA70EBD000184DD /* HHServicePickerView.m */,
 			);
 			path = HHPickerView;
+			sourceTree = "<group>";
+		};
+		2DD9F3B11FB2C9FC003A0ACE /* AMapUtil */ = {
+			isa = PBXGroup;
+			children = (
+				2DD9F3BF1FB2CB4A003A0ACE /* CommonUtility.h */,
+				2DD9F3BE1FB2CB49003A0ACE /* CommonUtility.m */,
+				2DD9F3BA1FB2CAFF003A0ACE /* LineDashPolyline.h */,
+				2DD9F3B81FB2CAFF003A0ACE /* LineDashPolyline.m */,
+				2DD9F3B91FB2CAFF003A0ACE /* MANaviPolyline.h */,
+				2DD9F3BB1FB2CAFF003A0ACE /* MANaviPolyline.m */,
+				2DD9F3B51FB2CAB7003A0ACE /* MANaviAnnotation.h */,
+				2DD9F3B61FB2CAB7003A0ACE /* MANaviAnnotation.m */,
+				2DD9F3B31FB2CA72003A0ACE /* MANaviRoute.h */,
+				2DD9F3B21FB2CA71003A0ACE /* MANaviRoute.m */,
+			);
+			path = AMapUtil;
+			sourceTree = "<group>";
+		};
+		2DD9F3F51FB2DB4C003A0ACE /* AMapCustom */ = {
+			isa = PBXGroup;
+			children = (
+				2DD9F3F91FB2DBA2003A0ACE /* YDStartAnnotationView.h */,
+				2DD9F3FA1FB2DBA2003A0ACE /* YDStartAnnotationView.m */,
+				2DD9F3FC1FB2DBEE003A0ACE /* YDStartPointAnnotation.h */,
+				2DD9F3FD1FB2DBEE003A0ACE /* YDStartPointAnnotation.m */,
+			);
+			path = AMapCustom;
 			sourceTree = "<group>";
 		};
 		B7436131272DCFE471C2B7E4 /* Pods */ = {
@@ -462,8 +513,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D51605E1FB06617004907DB /* YDHeaderView.m in Sources */,
+				2DD9F3BC1FB2CAFF003A0ACE /* LineDashPolyline.m in Sources */,
 				2D5E26551FB1A954002F0827 /* HHMenuView.m in Sources */,
 				2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */,
+				2DD9F3B41FB2CA72003A0ACE /* MANaviRoute.m in Sources */,
 				2D5160681FB14382004907DB /* DejNetwork.m in Sources */,
 				2DC221D41FA72A7C000184DD /* MapManager.m in Sources */,
 				2D16342B1FA8D5E000D0FC31 /* UIView+animated.m in Sources */,
@@ -471,13 +524,18 @@
 				2DC221A61FA6F25B000184DD /* HHBaseController.m in Sources */,
 				2DC221CF1FA72230000184DD /* HHContentView.m in Sources */,
 				2D5160691FB14382004907DB /* YDNetworking.m in Sources */,
+				2DD9F3FB1FB2DBA2003A0ACE /* YDStartAnnotationView.m in Sources */,
 				2DC221A51FA6F25B000184DD /* AppDelegate+Pay.m in Sources */,
 				2DC221BD1FA70B5E000184DD /* YDRegistController.m in Sources */,
+				2DD9F3B71FB2CAB7003A0ACE /* MANaviAnnotation.m in Sources */,
+				2DD9F3C01FB2CB4A003A0ACE /* CommonUtility.m in Sources */,
 				2DC221AA1FA6F25B000184DD /* Global.m in Sources */,
 				2DC221C31FA70EBD000184DD /* HHServicePickerView.m in Sources */,
 				2DC221881FA6F0DF000184DD /* main.m in Sources */,
 				2DC221E31FA76CDF000184DD /* HHUserController.m in Sources */,
 				2DC221A71FA6F25B000184DD /* HHMainController.m in Sources */,
+				2DD9F3BD1FB2CAFF003A0ACE /* MANaviPolyline.m in Sources */,
+				2DD9F3FE1FB2DBEE003A0ACE /* YDStartPointAnnotation.m in Sources */,
 				2D5E26521FB1A29B002F0827 /* HHAMapHelper.m in Sources */,
 				2DC221B31FA70190000184DD /* HHSlideView.m in Sources */,
 				2DC2217A1FA6F0DF000184DD /* AppDelegate.m in Sources */,

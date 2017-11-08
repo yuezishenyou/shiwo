@@ -179,6 +179,7 @@
 #pragma mark -----------画线活着添加蒙版-------------
 - (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id <MAOverlay>)overlay
 {
+    NSLog(@"------------ 在地图上画线 ------------------");
     /* 自定义定位精度对应的MACircleView. */
     if (overlay == mapView.userLocationAccuracyCircle)
     {

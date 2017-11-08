@@ -15,14 +15,23 @@
 #import "Global.h"
 #import "HHMenuView.h"
 
+#import "MANaviRoute.h"
+#import "YDStartAnnotationView.h"
+#import "YDStartPointAnnotation.h"
+
+
 @interface HHMainController ()<AMapSearchDelegate>
 
 @property (nonatomic, strong) HHSlideView *slideView;//侧滑面
 
 @property (nonatomic, strong) HHMenuView *menuView;//底部
 
-@property (nonatomic, strong) MAPointAnnotation *start;
+@property (nonatomic, strong) YDStartPointAnnotation *start;
 @property (nonatomic, strong) MAPointAnnotation *end;
+
+@property (nonatomic, strong) AMapRoute *route;
+@property (nonatomic, assign) NSInteger currentCourst;
+@property (nonatomic, strong) MANaviRoute * naviRoute;
 
 
 
@@ -123,14 +132,20 @@
     }];
     
     
+    [self.menuView setCancelOrderBlock:^{
+        [weakSelf cancelOrder];
+    }];
+    
+    
 }
 
 
 - (void)submitOrder
 {
+    
     [self clearMap];
     
-    self.start = [[MAPointAnnotation alloc]init];
+    self.start = [[YDStartPointAnnotation alloc]init];
     self.start.coordinate = CLLocationCoordinate2DMake(31.232080, 121.365597);
 
     self.end = [[MAPointAnnotation alloc]init];
@@ -142,28 +157,146 @@
      [self.mapView setCenterCoordinate:self.start.coordinate animated:YES];
 
     
-    
-    
-    
-    
-    //[self searchDriveRouteWithStartAnnotation:self.start destinationAnnotation:self.end];
-    
-    //[self searchReGeocodeWithCoordinate:self.start.coordinate];
+    [self searchDriveRouteWithStartAnnotation:self.start destinationAnnotation:self.end];//发起路选规划
+
+}
+
+- (void)cancelOrder
+{
+    [self clearMap];
 }
 
 
 
+//路线回调
+- (void)onRouteSearchDone:(AMapRouteSearchBaseRequest *)request response:(AMapRouteSearchResponse *)response
+{
+    NSLog(@"-----路线规划回调-----");
+    if (response.route == nil) {
+        return ;
+    }
+
+    self.route = response.route;
+    self.currentCourst = 0;
+    
+    if (response.count > 0) {
+        [self presentCurrentCourse];
+    }
+}
+
+- (void)presentCurrentCourse
+{
+    MANaviAnnotationType type = MANaviAnnotationTypeDrive;
+    
+    AMapGeoPoint *startPoint = [AMapGeoPoint locationWithLatitude:self.start.coordinate.latitude longitude:self.start.coordinate.longitude];
+    
+    AMapGeoPoint *endPoint = [AMapGeoPoint locationWithLatitude:self.end.coordinate.latitude longitude:self.end.coordinate.longitude];
+    
+    self.naviRoute = [MANaviRoute naviRouteForPath:self.route.paths[self.currentCourst] withNaviType:type
+                                       showTraffic:YES
+                                        startPoint:startPoint
+                                          endPoint:endPoint];
+    
+     [self.naviRoute addToMapView:self.mapView];
+    
+    
+    /* 缩放地图使其适应polylines的展示. */
+    
+    
+    
+//    [self.mapView setVisibleMapRect:[CommonUtility mapRectForOverlays:self.naviRoute.routePolylines]
+//                        edgePadding:UIEdgeInsetsMake(RoutePlanningPaddingEdge, RoutePlanningPaddingEdge, RoutePlanningPaddingEdge, RoutePlanningPaddingEdge)
+//                           animated:YES];
+   
+    
+}
 
 
+- (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id<MAOverlay>)overlay
+{
+    
+    NSLog(@"---------- abc -------------");
+    if ([overlay isKindOfClass:[LineDashPolyline class]])
+    {
+        MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:((LineDashPolyline *)overlay).polyline];
+        polylineRenderer.lineWidth   = 8;
+        polylineRenderer.lineDash = YES;
+        polylineRenderer.strokeColor = [UIColor redColor];
+        
+        return polylineRenderer;
+    }
+    if ([overlay isKindOfClass:[MANaviPolyline class]])
+    {
+        MANaviPolyline *naviPolyline = (MANaviPolyline *)overlay;
+        MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:naviPolyline.polyline];
+        
+        polylineRenderer.lineWidth = 8;
+        
+        if (naviPolyline.type == MANaviAnnotationTypeWalking)
+        {
+            polylineRenderer.strokeColor = self.naviRoute.walkingColor;
+        }
+        else if (naviPolyline.type == MANaviAnnotationTypeRailway)
+        {
+            polylineRenderer.strokeColor = self.naviRoute.railwayColor;
+        }
+        else
+        {
+            polylineRenderer.strokeColor = self.naviRoute.routeColor;
+        }
+        
+        return polylineRenderer;
+    }
+    if ([overlay isKindOfClass:[MAMultiPolyline class]])
+    {//自定义的线
+        MAMultiColoredPolylineRenderer * polylineRenderer = [[MAMultiColoredPolylineRenderer alloc] initWithMultiPolyline:overlay];
+        
+        polylineRenderer.lineWidth = 10;
+        polylineRenderer.strokeColors = [self.naviRoute.multiPolylineColors copy];
+        polylineRenderer.gradient = YES;
+        
+        return polylineRenderer;
+    }
+    
+    return nil;
+}
 
 
-
-
-
-
+#pragma mark -----------大头针生成-------------
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
 {
-    [super mapView:mapView viewForAnnotation:annotation];
+    
+    if ([annotation isKindOfClass:[MAUserLocation class]])
+    {//定位点
+        static NSString *transparentuserLocationStyleReuseIndetifier = @"asuserLocationStyleReuseIndetifier1";
+        MAAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:transparentuserLocationStyleReuseIndetifier];
+        if (annotationView == nil){
+            annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation
+                                                             reuseIdentifier:transparentuserLocationStyleReuseIndetifier];
+            UIImage *userLocation;
+            userLocation = [UIImage imageNamed:@"scheduellist_end_icon"];
+            annotationView.image = userLocation;
+            annotationView.zIndex = 1;
+        }
+        
+        return annotationView;
+    }
+    
+    if ([annotation isKindOfClass:[YDStartPointAnnotation class]]) {
+        static NSString *startIdentifier = @"startIdentifier";
+        
+        YDStartAnnotationView *annotationView = (YDStartAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:startIdentifier];
+        if (annotationView == nil) {
+            annotationView = [[YDStartAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:startIdentifier];
+        }
+        annotationView.portrait = [UIImage imageNamed:@"scheduellist_end_icon"];
+        
+        return annotationView;
+        
+    }
+    
+    
+    
     return nil;
 }
 

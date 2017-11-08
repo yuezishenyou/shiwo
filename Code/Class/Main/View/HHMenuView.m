@@ -11,6 +11,7 @@
 @interface HHMenuView ()
 
 @property (nonatomic, strong) UIButton *submitOrderBtn;
+@property (nonatomic, strong) UIButton *cancelOrderBtn;
 
 @end
 
@@ -34,6 +35,17 @@
     [self.submitOrderBtn addTarget:self action:@selector(submitOrderAction:) forControlEvents:UIControlEventTouchUpInside];
     self.submitOrderBtn.backgroundColor = [UIColor lightGrayColor];
     [self addSubview:self.submitOrderBtn];
+    
+    
+    self.cancelOrderBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.cancelOrderBtn.frame = CGRectMake(150, 0, 100, 40);
+    [self.cancelOrderBtn setTitle:@"派单" forState:UIControlStateNormal];
+    [self.cancelOrderBtn addTarget:self action:@selector(cancelOrderAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.cancelOrderBtn.backgroundColor = [UIColor lightGrayColor];
+    [self addSubview:self.cancelOrderBtn];
+    
+    
+    
 }
 
 
@@ -44,7 +56,12 @@
     }
 }
 
-
+- (void)cancelOrderAction:(UIButton *)btn
+{
+    if (_cancelOrderBlock) {
+        _cancelOrderBlock();
+    }
+}
 
 
 

@@ -15,6 +15,8 @@
 
 @property (nonatomic, copy) void(^submitOrderBlock)(void);
 
+@property (nonatomic, copy) void(^cancelOrderBlock)(void);
+
 
 
 
