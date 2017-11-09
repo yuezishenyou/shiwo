@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HHMainController.h"
 #import "HHAnimatedController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -32,7 +33,8 @@
 - (void)myCode
 {
     //HHMainController *vc = [[HHMainController alloc]initWithNibVCName:@"HHMainController"];
-    HHAnimatedController *vc = [[HHAnimatedController alloc]init];
+    //HHAnimatedController *vc = [[HHAnimatedController alloc]init];
+    ViewController *vc = [[ViewController alloc]init];
     
     self.window.frame = [[UIScreen mainScreen]bounds];
     

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HHAnimatedController.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"vc";
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"push" style:UIBarButtonItemStyleDone target:self action:@selector(pushAction)];
+}
+
+- (void)pushAction
+{
+    HHAnimatedController *vc = [[HHAnimatedController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
 
 
 @end

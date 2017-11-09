@@ -44,6 +44,13 @@
 		2DD9F3FB1FB2DBA2003A0ACE /* YDStartAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3FA1FB2DBA2003A0ACE /* YDStartAnnotationView.m */; };
 		2DD9F3FE1FB2DBEE003A0ACE /* YDStartPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F3FD1FB2DBEE003A0ACE /* YDStartPointAnnotation.m */; };
 		2DD9F4281FB3446A003A0ACE /* HHAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4271FB3446A003A0ACE /* HHAnimatedController.m */; };
+		2DD9F42B1FB34D39003A0ACE /* HHMovingAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F42A1FB34D39003A0ACE /* HHMovingAnnotation.m */; };
+		2DD9F4321FB35398003A0ACE /* car1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9F42D1FB35398003A0ACE /* car1@2x.png */; };
+		2DD9F4331FB35398003A0ACE /* car2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9F42E1FB35398003A0ACE /* car2@2x.png */; };
+		2DD9F4341FB35398003A0ACE /* trackingPoints@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9F42F1FB35398003A0ACE /* trackingPoints@2x.png */; };
+		2DD9F4351FB35398003A0ACE /* userPosition.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9F4301FB35398003A0ACE /* userPosition.png */; };
+		2DD9F4361FB35398003A0ACE /* userPosition@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9F4311FB35398003A0ACE /* userPosition@2x.png */; };
+		2DD9F43A1FB3DF96003A0ACE /* TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4391FB3DF95003A0ACE /* TimerManager.m */; };
 		6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +126,15 @@
 		2DD9F3FD1FB2DBEE003A0ACE /* YDStartPointAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDStartPointAnnotation.m; sourceTree = "<group>"; };
 		2DD9F4261FB3446A003A0ACE /* HHAnimatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAnimatedController.h; sourceTree = "<group>"; };
 		2DD9F4271FB3446A003A0ACE /* HHAnimatedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAnimatedController.m; sourceTree = "<group>"; };
+		2DD9F4291FB34D39003A0ACE /* HHMovingAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHMovingAnnotation.h; sourceTree = "<group>"; };
+		2DD9F42A1FB34D39003A0ACE /* HHMovingAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHMovingAnnotation.m; sourceTree = "<group>"; };
+		2DD9F42D1FB35398003A0ACE /* car1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car1@2x.png"; sourceTree = "<group>"; };
+		2DD9F42E1FB35398003A0ACE /* car2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car2@2x.png"; sourceTree = "<group>"; };
+		2DD9F42F1FB35398003A0ACE /* trackingPoints@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trackingPoints@2x.png"; sourceTree = "<group>"; };
+		2DD9F4301FB35398003A0ACE /* userPosition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userPosition.png; sourceTree = "<group>"; };
+		2DD9F4311FB35398003A0ACE /* userPosition@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userPosition@2x.png"; sourceTree = "<group>"; };
+		2DD9F4381FB3DF95003A0ACE /* TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager.h; sourceTree = "<group>"; };
+		2DD9F4391FB3DF95003A0ACE /* TimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerManager.m; sourceTree = "<group>"; };
 		30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,6 +209,7 @@
 		2DC2218E1FA6F25B000184DD /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				2DD9F42C1FB35398003A0ACE /* Resources */,
 				2DC2218F1FA6F25B000184DD /* Category */,
 				2DC221921FA6F25B000184DD /* Class */,
 				2DC2219C1FA6F25B000184DD /* Common */,
@@ -249,6 +266,8 @@
 				2DC2219B1FA6F25B000184DD /* HHMainController_iPhone.xib */,
 				2DD9F4261FB3446A003A0ACE /* HHAnimatedController.h */,
 				2DD9F4271FB3446A003A0ACE /* HHAnimatedController.m */,
+				2DD9F4291FB34D39003A0ACE /* HHMovingAnnotation.h */,
+				2DD9F42A1FB34D39003A0ACE /* HHMovingAnnotation.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +288,7 @@
 		2DC221A11FA6F25B000184DD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2DD9F4371FB3DF95003A0ACE /* TimerManager */,
 				2DD9F3F51FB2DB4C003A0ACE /* AMapCustom */,
 				2DD9F3B11FB2C9FC003A0ACE /* AMapUtil */,
 				2D1634281FA8D5E000D0FC31 /* HHViewAnimated */,
@@ -355,6 +375,27 @@
 				2DD9F3FD1FB2DBEE003A0ACE /* YDStartPointAnnotation.m */,
 			);
 			path = AMapCustom;
+			sourceTree = "<group>";
+		};
+		2DD9F42C1FB35398003A0ACE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DD9F42D1FB35398003A0ACE /* car1@2x.png */,
+				2DD9F42E1FB35398003A0ACE /* car2@2x.png */,
+				2DD9F42F1FB35398003A0ACE /* trackingPoints@2x.png */,
+				2DD9F4301FB35398003A0ACE /* userPosition.png */,
+				2DD9F4311FB35398003A0ACE /* userPosition@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2DD9F4371FB3DF95003A0ACE /* TimerManager */ = {
+			isa = PBXGroup;
+			children = (
+				2DD9F4381FB3DF95003A0ACE /* TimerManager.h */,
+				2DD9F4391FB3DF95003A0ACE /* TimerManager.m */,
+			);
+			path = TimerManager;
 			sourceTree = "<group>";
 		};
 		B7436131272DCFE471C2B7E4 /* Pods */ = {
@@ -444,10 +485,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DC221D11FA72240000184DD /* HHContentView.xib in Resources */,
+				2DD9F4361FB35398003A0ACE /* userPosition@2x.png in Resources */,
 				2DC221A81FA6F25B000184DD /* HHMainController_iPad.xib in Resources */,
 				2D5160601FB06641004907DB /* YDHeaderView.xib in Resources */,
 				2DC221851FA6F0DF000184DD /* LaunchScreen.storyboard in Resources */,
+				2DD9F4341FB35398003A0ACE /* trackingPoints@2x.png in Resources */,
 				2DC221821FA6F0DF000184DD /* Assets.xcassets in Resources */,
+				2DD9F4321FB35398003A0ACE /* car1@2x.png in Resources */,
+				2DD9F4351FB35398003A0ACE /* userPosition.png in Resources */,
+				2DD9F4331FB35398003A0ACE /* car2@2x.png in Resources */,
 				2DC221801FA6F0DF000184DD /* Main.storyboard in Resources */,
 				2DC221A91FA6F25B000184DD /* HHMainController_iPhone.xib in Resources */,
 				2DC221BF1FA70BE3000184DD /* YDRegistController_iPhone.xib in Resources */,
@@ -521,6 +567,7 @@
 				2DD9F3BC1FB2CAFF003A0ACE /* LineDashPolyline.m in Sources */,
 				2D5E26551FB1A954002F0827 /* HHMenuView.m in Sources */,
 				2DC2217D1FA6F0DF000184DD /* ViewController.m in Sources */,
+				2DD9F43A1FB3DF96003A0ACE /* TimerManager.m in Sources */,
 				2DD9F3B41FB2CA72003A0ACE /* MANaviRoute.m in Sources */,
 				2D5160681FB14382004907DB /* DejNetwork.m in Sources */,
 				2DC221D41FA72A7C000184DD /* MapManager.m in Sources */,
@@ -535,6 +582,7 @@
 				2DC221BD1FA70B5E000184DD /* YDRegistController.m in Sources */,
 				2DD9F3B71FB2CAB7003A0ACE /* MANaviAnnotation.m in Sources */,
 				2DD9F3C01FB2CB4A003A0ACE /* CommonUtility.m in Sources */,
+				2DD9F42B1FB34D39003A0ACE /* HHMovingAnnotation.m in Sources */,
 				2DC221AA1FA6F25B000184DD /* Global.m in Sources */,
 				2DC221C31FA70EBD000184DD /* HHServicePickerView.m in Sources */,
 				2DC221881FA6F0DF000184DD /* main.m in Sources */,
