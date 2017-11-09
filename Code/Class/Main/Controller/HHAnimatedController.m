@@ -218,9 +218,9 @@
     
     //double speed = 120 / 3.6;
     
-    self.car1.coordinate = coords[0];
+    self.car2.coordinate = coords[0];
     
-    [self.car1 addMoveAnimationWithKeyCoordinates:coords count:count withDuration:count withName:nil completeCallback:^(BOOL isFinished) {
+    [self.car2 addMoveAnimationWithKeyCoordinates:coords count:count withDuration:count withName:nil completeCallback:^(BOOL isFinished) {
         
     }];
     

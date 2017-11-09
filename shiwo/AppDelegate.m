@@ -10,6 +10,7 @@
 #import "HHMainController.h"
 #import "HHAnimatedController.h"
 #import "ViewController.h"
+#import "HHNavigatonController.h"
 
 @interface AppDelegate ()
 
@@ -32,15 +33,15 @@
 
 - (void)myCode
 {
-    //HHMainController *vc = [[HHMainController alloc]initWithNibVCName:@"HHMainController"];
+    HHMainController *vc = [[HHMainController alloc]initWithNibVCName:@"HHMainController"];
     //HHAnimatedController *vc = [[HHAnimatedController alloc]init];
-    ViewController *vc = [[ViewController alloc]init];
+    //ViewController *vc = [[ViewController alloc]init];
     
     self.window.frame = [[UIScreen mainScreen]bounds];
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    UINavigationController *navc = [[UINavigationController alloc]initWithRootViewController:vc];
+    HHNavigatonController *navc = [[HHNavigatonController alloc]initWithRootViewController:vc];
     
     self.window.rootViewController = navc;
     

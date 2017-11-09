@@ -51,6 +51,7 @@
 		2DD9F4351FB35398003A0ACE /* userPosition.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9F4301FB35398003A0ACE /* userPosition.png */; };
 		2DD9F4361FB35398003A0ACE /* userPosition@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9F4311FB35398003A0ACE /* userPosition@2x.png */; };
 		2DD9F43A1FB3DF96003A0ACE /* TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4391FB3DF95003A0ACE /* TimerManager.m */; };
+		2DD9F4A31FB43E1D003A0ACE /* HHNavigatonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4A21FB43E1D003A0ACE /* HHNavigatonController.m */; };
 		6163B59B779B8D82EF12E075 /* libPods-shiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,8 @@
 		2DD9F4311FB35398003A0ACE /* userPosition@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userPosition@2x.png"; sourceTree = "<group>"; };
 		2DD9F4381FB3DF95003A0ACE /* TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager.h; sourceTree = "<group>"; };
 		2DD9F4391FB3DF95003A0ACE /* TimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerManager.m; sourceTree = "<group>"; };
+		2DD9F4A11FB43E1D003A0ACE /* HHNavigatonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHNavigatonController.h; sourceTree = "<group>"; };
+		2DD9F4A21FB43E1D003A0ACE /* HHNavigatonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHNavigatonController.m; sourceTree = "<group>"; };
 		30FD4CCCD8E9E1D4C247AB33 /* libPods-shiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B55D9D89D3A2D34FA020C3 /* Pods-shiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-shiwo/Pods-shiwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +247,8 @@
 				2D5E26511FB1A29B002F0827 /* HHAMapHelper.m */,
 				2DC221941FA6F25B000184DD /* HHBaseController.h */,
 				2DC221951FA6F25B000184DD /* HHBaseController.m */,
+				2DD9F4A11FB43E1D003A0ACE /* HHNavigatonController.h */,
+				2DD9F4A21FB43E1D003A0ACE /* HHNavigatonController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -576,6 +581,7 @@
 				2DC221A61FA6F25B000184DD /* HHBaseController.m in Sources */,
 				2DD9F4281FB3446A003A0ACE /* HHAnimatedController.m in Sources */,
 				2DC221CF1FA72230000184DD /* HHContentView.m in Sources */,
+				2DD9F4A31FB43E1D003A0ACE /* HHNavigatonController.m in Sources */,
 				2D5160691FB14382004907DB /* YDNetworking.m in Sources */,
 				2DD9F3FB1FB2DBA2003A0ACE /* YDStartAnnotationView.m in Sources */,
 				2DC221A51FA6F25B000184DD /* AppDelegate+Pay.m in Sources */,
